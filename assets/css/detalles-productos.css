@@ -1,0 +1,465 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #09B1BA;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-btn {
+    background-color: #09B1BA;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.producto-detalle-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Galería de fotos */
+.producto-galeria {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagen-principal {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagen-principal img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.miniaturas {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.miniatura {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miniatura.activa {
+    opacity: 1;
+    border: 2px solid #09B1BA;
+}
+
+/* Información del producto */
+.producto-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.producto-header {
+    margin-bottom: 20px;
+}
+
+.producto-header h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.precio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+.precio-original {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.descuento {
+    background-color: #FF006E;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Especificaciones del producto */
+.producto-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.spec-value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Botones de acción */
+.botones-accion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.botones-accion button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-comprar {
+    background-color: #09B1BA;
+    color: white;
+    flex: 2;
+}
+
+.btn-oferta {
+    background-color: white;
+    color: #09B1BA;
+    border: 1px solid #09B1BA !important;
+    flex: 2;
+}
+
+.btn-mensaje, .btn-favorito {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-favorito {
+    width: 48px;
+    padding: 0;
+}
+
+/* Información del vendedor */
+.vendedor-info {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.vendedor-cabecera {
+    display: flex;
+    align-items: center;
+}
+
+.vendedor-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.vendedor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vendedor-detalles {
+    flex-grow: 1;
+}
+
+.vendedor-detalles h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.vendedor-stats {
+    display: flex;
+    gap: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-seguir {
+    background-color: white;
+    color: #09B1BA;
+    border: 1px solid #09B1BA;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Descripción */
+.descripcion {
+    margin-bottom: 25px;
+}
+
+.descripcion h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.fecha-publicacion {
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+}
+
+/* Información de envío */
+.envio-info {
+    margin-bottom: 25px;
+}
+
+.envio-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.metodo-envio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.envio-icon {
+    font-size: 20px;
+    color: #666;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.envio-detalles h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.envio-detalles p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Artículos similares */
+.articulos-similares h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 18px;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-download img {
+    height: 40px;
+    width: auto;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .producto-detalle-container {
+        flex-direction: column;
+    }
+    
+    .producto-specs {
+        grid-template-columns: 1fr;
+    }
+    
+    .botones-accion {
+        flex-direction: column;
+    }
+    
+    .botones-accion button {
+        width: 100%;
+    }
+    
+    .btn-mensaje, .btn-favorito {
+        width: 100%;
+    }
+}

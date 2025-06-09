@@ -27,11 +27,6 @@
     display: block;
 }
 
-.articulo_info {
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-}
 
 .titulo {
     font-size: 0.85rem;
@@ -72,7 +67,8 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-/* Para pantallas medianas */
+
+
 @media (min-width: 768px) {
     .articulos {
         grid-template-columns: repeat(3, 1fr);
@@ -80,7 +76,6 @@
     }
 }
 
-/* Para pantallas grandes */
 @media (min-width: 992px) {
     .articulos {
         grid-template-columns: repeat(4, 1fr);
