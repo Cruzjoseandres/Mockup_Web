@@ -6,7 +6,9 @@
     <title>Detalle del Producto</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/producto-detalle-conteiner.css">
     <link rel="stylesheet" href="assets/css/detalles-productos.css">
+    <link rel="stylesheet" href="assets/css/producto-info.css">
     <link rel="stylesheet" href="assets/css/articulos.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
@@ -14,7 +16,7 @@
     <header>
         <div class="cabecera">
             <div class="contenedor">
-                <h2>Marketplace</h2>
+                <a href="index.html"><h2>Marketplace</h2></a>
                 <input type="checkbox" id="menu-toggle" style="display:none;">
                 <label for="menu-toggle">&#9776; </label>
             </div>
@@ -55,7 +57,7 @@
                     <img src="assets/img/articulo-1.png" alt="imagen">
                 </div>
                 <div class="miniaturas">
-                    <div class="miniatura activa">
+                    <div class="miniatura   ">
                         <img src="assets/img/articulo-1.png" alt="imagen">
                     </div>
                     <div class="miniatura">
@@ -72,17 +74,13 @@
 
             <!-- Información del producto -->
             <div class="producto-info">
-                <div class="articulo">
-                    <img src="assets/img/articulo-1.png" alt="imagen">
-                    <h3 class="titulo">Reebok Classic C 55 q .</h3>
-                    <p class="descripcion">Zapatos de cuero.</p>
-                    <div class="precio_favorito">
-                        <p class="precio">300bs.</p>
-                        <div class="favorito">❤️</div>
-                    </div>
+                <div class="detalle">
+                    <h3>Reebok Classic C 55.</h3>
+                    <p>Zapatos de cuero.</p>
+                    <p>300bs.</p>
                 </div>
 
-                <div class="producto-specs">
+                <div class="producto-especificaciones">
                     <div class="spec-item">
                         <span class="spec-label">Talla</span>
                         <span class="spec-value">44</span>
@@ -103,29 +101,15 @@
 
                 <div class="botones-accion">
                     <button class="btn-comprar">Comprar ahora</button>
-                    <button class="btn-oferta">Hacer una oferta</button>
                     <button class="btn-mensaje"><i class="fas fa-comment"></i> Mensaje</button>
-                    <button class="btn-favorito"><i class="far fa-heart"></i></button>
+                    <button class="btn-Guardar"><i class="far fa-heart">Guardar</i></button>
                 </div>
 
                 <div class="vendedor-info">
                     <div class="vendedor-cabecera">
                         <div class="vendedor-avatar">
-                            <img src="https://via.placeholder.com/50" alt="Avatar del vendedor">
-                        </div>
-                        <div class="vendedor-detalles">
+                            <img src="assets/img/vendedor.png" alt="Avatar del vendedor">
                             <h3>María G.</h3>
-                            <div class="vendedor-stats">
-                                <span class="valoracion">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    (56)
-                                </span>
-                                <span class="articulos">120 artículos</span>
-                            </div>
                         </div>
                         <button class="btn-seguir">Seguir</button>
                     </div>
@@ -133,13 +117,13 @@
 
                 <div class="descripcion">
                     <h3>Descripción</h3>
-                    <p>Chaqueta vaquera Levi's en perfecto estado. Apenas usada, talla M que queda ligeramente oversize. Ideal para primavera y otoño. Tiene dos bolsillos frontales y botones metálicos originales. No tiene manchas ni desperfectos.</p>
+                    <p>Zapatillas clásicas con estilo retro. Diseño minimalista inspirado en el tenis, parte superior de cuero suave, suela de goma duradera y gran comodidad para uso diario. ¡Versátiles y atemporales!</p>
                     <p>Me la compré hace 2 años pero apenas la he usado. La vendo porque ya no es mi estilo.</p>
-                    <p class="fecha-publicacion">Publicado hace 2 días en Madrid, España</p>
+                    <p class="fecha-publicacion">Publicado hace 2 días en Santa Cruz, Bolivia</p>
                 </div>
         </div>
 
-        <!-- Artículos similares -->
+        
         <section class="articulos-similares">
             <h2>Artículos similares</h2>
             <div class="articulos">
@@ -194,50 +178,14 @@
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sobre nosotros</h4>
-                <ul>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Cómo funciona</a></li>
-                    <li><a href="#">Impacto sostenible</a></li>
-                    <li><a href="#">Trabajar con nosotros</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="#">Centro de ayuda</a></li>
-                    <li><a href="#">Normas de seguridad</a></li>
-                    <li><a href="#">Envíos y devoluciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Comunidad</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Foro</a></li>
-                    <li><a href="#">Historias</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Síguenos</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                </div>
-                <div class="app-download">
-                    <a href="#"><img src="https://via.placeholder.com/120x40?text=App+Store" alt="Descargar en App Store"></a>
-                    <a href="#"><img src="https://via.placeholder.com/120x40?text=Google+Play" alt="Descargar en Google Play"></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2025 MiVinted. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2025 Marketplace. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

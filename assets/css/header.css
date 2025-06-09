@@ -47,6 +47,11 @@ header input[type="search"]{
     border-bottom: 1px solid #ccc;
 }
 
+.contenedor a {
+    text-decoration: none;
+
+}
+
 .buscador{
     padding: 10px 0px;
     width: 100%;
